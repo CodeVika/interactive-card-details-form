@@ -1,0 +1,208 @@
+@keyframes body {
+  from {
+    background-position: -100% center;
+  }
+  to {
+    background-position: left center;
+  }
+}
+@keyframes card-animation {
+  from {
+    transform: scale(0) rotate(180deg);
+  }
+  to {
+    transform: scale(1) rotate(0deg);
+  }
+}
+@keyframes label {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes input {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+@keyframes button-late {
+  from {
+    transform: translateY(700%) scaleY(3);
+  }
+  to {
+    transform: translateY(0) scaleY(1);
+  }
+}
+body {
+  height: 100vh;
+  overflow-y: hidden;
+  background-image: url(../images/bg-main-desktop.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left center;
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  text-transform: uppercase;
+  align-content: center;
+  animation: body 1500ms ease-in-out 2ms both;
+}
+body main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1050px;
+  width: 100%;
+  margin-inline: auto;
+}
+body main .main__cards {
+  max-width: 540px;
+  width: 100%;
+  min-height: 527px;
+  position: relative;
+}
+body main .main__cards img {
+  max-width: 447px;
+  position: absolute;
+}
+body main .main__cards .top-left {
+  top: 0;
+  left: 0;
+  animation: card-animation 700ms ease-in-out 0ms both;
+}
+body main .main__cards .bottom-right {
+  animation: card-animation 900ms ease-in-out 200ms both;
+  bottom: 0;
+  right: 0;
+}
+body main form {
+  max-width: 380px;
+  width: 100%;
+}
+body main form div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 9px;
+  margin-block-end: 26px;
+}
+body main form div:last-of-type {
+  margin-block-end: 40px;
+}
+body main form div label {
+  color: #21092F;
+  font-size: 12px;
+  line-height: normal;
+  letter-spacing: 2px;
+  opacity: 100;
+}
+body main form div .label-1 {
+  animation: label 1200ms ease-in-out 400ms both;
+}
+body main form div .label-2 {
+  animation: label 1200ms ease-in-out 500ms both;
+}
+body main form div .label-3 {
+  animation: label 1200ms ease-in-out 600ms both;
+}
+body main form div .label-4 {
+  animation: label 1200ms ease-in-out 700ms both;
+}
+body main form div input {
+  color: #21092F;
+  font-size: 18px;
+  line-height: normal;
+  padding-block: 11px;
+  padding-inline: 16px;
+  border-radius: 8px;
+  border: 1px solid #DFDEE0;
+  transform-origin: left;
+}
+body main form div input[name=cardholder-name], body main form div input[name=cardholder-number] {
+  width: 100%;
+}
+body main form div input::-moz-placeholder {
+  color: #21092F;
+  font-size: 18px;
+  line-height: normal;
+  letter-spacing: normal;
+  opacity: 0.25;
+}
+body main form div input::placeholder {
+  color: #21092F;
+  font-size: 18px;
+  line-height: normal;
+  letter-spacing: normal;
+  opacity: 0.25;
+}
+body main form div input:focus {
+  outline: 1px solid #6348FE;
+  border: 1px solid #6348FE;
+}
+body main form div input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+          appearance: none;
+}
+body main form div .input-1 {
+  animation: input 700ms ease-in-out 750ms both;
+}
+body main form div .input-2 {
+  animation: input 700ms ease-in-out 850ms both;
+}
+body main form div .input-3 {
+  animation: input 400ms ease-in-out 1050ms both;
+}
+body main form div .input-4 {
+  animation: input 400ms ease-in-out 1200ms both;
+}
+body main form div .input-5 {
+  animation: input 500ms ease-in-out 1300ms both;
+}
+body main form .back-side-data {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+body main form .back-side-data .date-data {
+  margin-block-end: 0;
+  max-width: 170px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+body main form .back-side-data .date-data label {
+  flex-basis: 1;
+}
+body main form .back-side-data .cvc-data {
+  max-width: 190px;
+  width: 100%;
+  margin-block-end: 0;
+}
+body main form button {
+  width: 100%;
+  min-height: 53px;
+  border: 0;
+  border-radius: 8px;
+  background-color: #21092F;
+  color: #FFF;
+  font-family: "Space Grotesk";
+  font-size: 18px;
+  line-height: normal;
+  transition: background-color 500ms ease-in-out, color 500ms ease-in-out, border 500ms ease-in-out;
+  animation: button-late 400ms cubic-bezier(0.13, -0.01, 0.91, 0.63) 1800ms both;
+  cursor: pointer;
+}
+body main form button:hover {
+  background-color: transparent;
+  border: 1px solid #21092F;
+  color: #21092F;
+}/*# sourceMappingURL=styles.css.map */
