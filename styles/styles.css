@@ -115,6 +115,7 @@ body main form div .label-4 {
   animation: label 1200ms ease-in-out 700ms both;
 }
 body main form div input {
+  height: 45px;
   color: #21092F;
   font-size: 18px;
   line-height: normal;
@@ -181,6 +182,9 @@ body main form .back-side-data .date-data {
 }
 body main form .back-side-data .date-data label {
   flex-basis: 1;
+}
+body main form .back-side-data .date-data input {
+  flex-basis: 80px;
 }
 body main form .back-side-data .cvc-data {
   max-width: 190px;

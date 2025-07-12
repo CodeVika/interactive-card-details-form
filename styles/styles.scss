@@ -129,6 +129,7 @@ body{
                     animation: label 1200ms ease-in-out 700ms both;
                 }
                 input{
+                    height: 45px;
                     color: $deep-violet;
                     font-size: 18px;
                     line-height: normal;
@@ -181,6 +182,9 @@ body{
                     column-gap: 10px;
                     label{
                         flex-basis: 1;
+                    }
+                    input{
+                        flex-basis: 80px;
                     }
                 }
                 .cvc-data{
